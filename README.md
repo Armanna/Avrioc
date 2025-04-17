@@ -59,6 +59,7 @@ This pipeline simulates, processes, and visualizes user interaction data from mu
                   └─────────────┘
 
 
+```
 
 ## Components
 
