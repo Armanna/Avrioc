@@ -234,7 +234,7 @@ user-interaction-pipeline/
 - Supporting distributed processing with Kafka Streams or Spark Streaming
 - Implementing data retention policies for efficient storage
 
-## Best practices and easy ways to implement
+## Alternative and easier way to implement
 
 - Using confluent package
 - Connecting to Confluent Control Center
