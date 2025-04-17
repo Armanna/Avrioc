@@ -195,7 +195,7 @@ For real-time aggregation, we use a hybrid approach:
 
 ## Project Structure
 
-
+```text
 user-interaction-pipeline/
 │
 ├── src/
