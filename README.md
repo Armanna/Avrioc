@@ -223,7 +223,7 @@ user-interaction-pipeline/
 ├── main.py # Application entry point
 ├── requirements.txt # Project dependencies
 └── README.md # Project documentation
-
+```
 
 
 ## Future Improvements
