@@ -159,19 +159,22 @@ Configuration settings are centralized in `src/config.py`. Important settings in
 
 ### Running All Components
 
+```
 python main.py
+```
 
 ### Running Specific Components
 
+```
 python main.py --components producer consumer dashboard
+```
 
 
 ### Changing Data Generation Rate
 
-
+```
 python main.py --generation-rate 200 --batch-size 50
-
-
+```
 
 ## Design Choices
 
