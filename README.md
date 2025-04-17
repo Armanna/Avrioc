@@ -15,48 +15,48 @@ This pipeline simulates, processes, and visualizes user interaction data from mu
 
 ## Architecture 
 
+```text
 ┌─────────────┐
-│ Data │
-│ Generator │
+│   Data      │
+│ Generator   │
 └──────┬──────┘
-│
-▼
+       │
+       ▼
 ┌─────────────┐
-│ Kafka │
-│ Producer │
+│   Kafka     │
+│  Producer   │
 └──────┬──────┘
-│
-▼
+       │
+       ▼
 ┌─────────────┐
-│ Kafka │
-│ Broker │
+│   Kafka     │
+│   Broker    │
 └──────┬──────┘
-│
-▼
+       │
+       ▼
 ┌─────────────┐
-│ Kafka │
-│ Consumer │
+│   Kafka     │
+│  Consumer   │
 └──────┬──────┘
-│
-┌────────────┴────────────┐
-│ │
-▼ ▼
-┌─────────────┐ ┌─────────────┐
-│ MongoDB │ │ Real-time │
-│ Storage │◄───────────┤ Aggregator │
-└──────┬──────┘ └──────┬──────┘
-│ │
-│ │
-▼ │
-┌─────────────┐ │
-│ Dashboard │◄──────────────────┘
-└──────┬──────┘
-│
-▼
-┌─────────────┐
-│ Alerting │
-│ System │
-└─────────────┘
+       │
+┌──────┴────────────┐
+│                   │
+▼                   ▼
+┌─────────────┐   ┌─────────────┐
+│   MongoDB   │   │ Real-time   │
+│  Storage    │◄──┤ Aggregator  │
+└──────┬──────┘   └──────┬──────┘
+       │                 │
+       │                 ▼
+       │          ┌─────────────┐
+       └─────────►│ Dashboard   │
+                  └──────┬──────┘
+                         │
+                         ▼
+                  ┌─────────────┐
+                  │  Alerting   │
+                  │   System    │
+                  └─────────────┘
 
 
 
